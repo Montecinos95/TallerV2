@@ -29,6 +29,8 @@ header .Logo {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 2px solid red;
+    margin-top: 1em;
 }
 
 .Hero-text {
@@ -36,13 +38,48 @@ header .Logo {
 }
 
 .Hero-text h2 {
+    text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.Hero-text p {
+    font-size: 1.3rem;
+    padding: 0 1em;
+}
+
+.Hero-text button {
+    font-size: 1.3rem;
+    padding: 0.4em 0.8em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+.img-cont {
+    display: grid;
+    /* gap: em; */
+    /* margin: 2em 2em; */
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.imag img{
+    height: 80%;
 }
 
 /* HERO */
 
 /* SERVICIOS */
+
+.Servicios {
+    background-color: #f5ebe0;
+    padding: 1em 0;
+}
 
 .container {
     display: grid;
@@ -61,19 +98,20 @@ header .Logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
+    justify-content: center;
     border-radius: 2em;
+    background-color: #d5bdaf;
 }
 
 .card h3 {
-    padding: 1.5em 0;
+    padding: 1em 0.3em;
     font-size: 1.8em;
     text-align: center;
 }
 
 .card p {
-    padding: 0 2em;
+    padding: 0 1em;
     font-size: 1.5em; 
     line-height: 1.2em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }

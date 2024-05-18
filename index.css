@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GLOBAL */
+
+.dos-col{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+} 
+
+.dos-col .fil1 {
+    width: 50%;
+    padding: 0 3em;
+}
+
+.dos-col .fil1 img{
+    max-width: 100%;
+}
+
+.dos-col .fil2 {
+    padding: 0 3em;
+    width: 50%;
+}
+
+/* GLOBAL */
+
+
+
+/* NAVEGACION */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    outline: 3px solid yellow;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .menu li {
+    padding-left: 1em;
+}
+
+/* NAVEGACION */
+
+/* SERVICIOS */
+
+.container {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "servicio1 servicio2 servicio3 servicio4";
+}
+
+.container .ser {
+    outline: 3px solid red;
+}
+
+/* SERVICIOS */
+
+
+/* QUIENES */
+
+.quienes {
+    outline: 3px solid green;
+}
+
+.quienes .dos-col .fil1 {
+    display: flex;
+    justify-content: center;
+}
+
+.quienes .dos-col .imagen {
+    display: flex;
+    flex-direction: column;
+}
+
+/* QUIENES */
+
+
+/* CONTACTO */
+
+.contac {
+    outline: 3px solid blue;
+}
+
+
+.contac .dos-col .fil1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contac .dos-col .fil2 {
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid black;
+    justify-content: center;
+    align-items: center;
+}
+/* CONTACTO */
